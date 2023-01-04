@@ -30,13 +30,10 @@ REMDx can be configured using [register map](https://quractech.github.io/remdx_r
 
 ## Getting Started
 ### Upgrading REMDx to newest firmware
-1. Download and install [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html)<br>
-2. 
-![alt text](stm32cubeprogrammer.PNG){:height="50%" width="50%"}
+1. Download and install [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html)<br> <img src="stm32cubeprogrammer.PNG" alt="Alt text" height=50% width=50%"}
 2. Connect REMDx to you PC with a USB cable that is capable of data transfer.
 3. On REMDx press and hold the BOOT button, then press RESET button and let go of both buttons.
-4. Open STM32CubeProgrammer select USB (Blue dropdown menu), then press refresh untill "USB1" shows up on port (Serial number 2081325A4146), then connect.<br>
-<img src="connectstm32cubeprogrammer.PNG" alt="Alt text" height=50% width=50%>
+4. Open STM32CubeProgrammer select USB (Blue dropdown menu), then press refresh untill "USB1" shows up on port (Serial number 2081325A4146), then connect.<br> <img src="connectstm32cubeprogrammer.PNG" alt="Alt text" height=50% width=50%>
 5. Download [FW.elf](https://github.com/quractech/remdx/blob/main/FW/Debug/FW.elf) file to your PC. Go back to STM32CubeProgrammer press "open file" then press download. Now REMDx should be programmed or updated to the newest Firmware.
 ### Get REMDx to stream data
 7. Download and install [Realterm](https://realterm.sourceforge.io/index.html#downloads_Download) or similar terminal program.<br>
