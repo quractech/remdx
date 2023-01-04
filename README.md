@@ -31,7 +31,7 @@ REMDx can be configured using [register map](https://quractech.github.io/remdx_r
 ## Getting Started
 1. Download and install [Realterm](https://realterm.sourceforge.io/index.html#downloads_Download) or similar terminal program.
 ![RealTerm](https://realterm.sourceforge.io/realterm1.png)
-<img src="https://realterm.sourceforge.io/realterm1.png" width="150" height="280">
+<img src="https://realterm.sourceforge.io/realterm1.png" width=50%>
 
 2. Select the COMPORT, find it under Device Manager in windows
     ![Comport](comport.PNG)
