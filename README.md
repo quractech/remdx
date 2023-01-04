@@ -1,7 +1,10 @@
 # REMDx
 The REMDx can measure 0-35V DC voltages with a resolution of 1mV, 0-8A DC currents with a resolution of 250uA (which can be modified), burden voltages, and power. Furthermore, all measurements can be performed over two channels.
 The REMDx (Realtime Efficiency Measurement Unit x) was originally intended to measure effeciency of Switch Mode Power Supplies hence the name REMDx, but later evolved to a datalogging device.
+
+Concept diagram of REMDx is shown below.
 ![Block diagram](concept_white.png)
+The REMDx PCB
 ![REMDx board](board_v3.jpg)
 
 The REMDx is capable of measuring:
