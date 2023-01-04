@@ -26,6 +26,6 @@ Micro-SDcard slot
 ### Real-time plotting with python
 Data stream capability using USB for datalogging and visualization with python (see scripting folder)
 ### Register Map
-REMDx can be configured using register map, the configuration can be saved in EEPROM (default configuration can be restored), see register map section
+REMDx can be configured using [register map](https://quractech.github.io/remdx_registermap/), the configuration can be saved in EEPROM (default configuration can be restored), see [register map section](https://quractech.github.io/remdx_registermap/)
 
 
