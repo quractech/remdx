@@ -32,9 +32,10 @@ REMDx can be configured using [register map](https://quractech.github.io/remdx_r
 1. Download and install [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html)<br><img src="stm32cubeprogrammer.PNG" width=50%>
 2. Connect REMDx to you PC with a USB cable that is capable of data transfer.
 3. On REMDx press and hold the BOOT button, then press RESET button and let go of both buttons.
+4. Open STM32CubeProgrammer select USB (Blue dropdown menu), then press refresh untill "USB1" shows up on port (Serial number 2081325A4146), then connect.<br><img src="connectstm32cubeprogrammer.PNG" width=50%>
 5. Download and install [Realterm](https://realterm.sourceforge.io/index.html#downloads_Download) or similar terminal program.<br><img src="https://realterm.sourceforge.io/realterm1.png" width=50%>
-4. Select the COMPORT, find it under Device Manager in windows<br><img src="comport.PNG" width=50%>
-5. Select the BAUD RATE 115200 and connect, now you should see a contineous data stream as show in the picture below.<br><img src="realterm_connect.png" width=50%>
+6. Select the COMPORT, find it under Device Manager in windows<br><img src="comport.PNG" width=50%>
+7. Select the BAUD RATE 115200 and connect, now you should see a contineous data stream as show in the picture below.<br><img src="realterm_connect.png" width=50%>
 
 
 
