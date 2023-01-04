@@ -1,0 +1,296 @@
+{
+    "reg": [{
+            "items": [{
+                "name": "id0",
+                "value": 10,
+                "bit": 8,
+                "start-bit": 0
+            }]
+        },
+        {
+            "items": [{
+                "name": "id1",
+                "value": 10,
+                "bit": 8,
+                "start-bit": 0
+            }]
+        },
+        {
+            "item": [{
+                    "name": "set_led1",
+                    "value": 0,
+                    "bit": 1,
+                    "start-bit": 0
+                },
+                {
+                    "name": "set_led2",
+                    "value": 0,
+                    "bit": 1,
+                    "start-bit": 1
+                },
+                {
+                    "name": "set_dig_out0",
+                    "value": 0,
+                    "bit": 1,
+                    "start-bit": 2
+                },
+                {
+                    "name": "set_dig_out1",
+                    "value": 0,
+                    "bit": 1,
+                    "start-bit": 3
+                },
+                {
+                    "name": "get_int_in0",
+                    "value": 0,
+                    "bit": 1,
+                    "start-bit": 4
+                },
+                {
+                    "name": "get_int_in1",
+                    "value": 0,
+                    "bit": 1,
+                    "start-bit": 5
+                },
+                {
+                    "name": "en_pwm0",
+                    "value": 0,
+                    "bit": 1,
+                    "start-bit": 6
+                },
+                {
+                    "name": "en_pwm1",
+                    "value": 0,
+                    "bit": 1,
+                    "start-bit": 7
+                }
+            ]
+        },
+        {
+            "item": [{
+                    "name": "auto_off_dis",
+                    "value": 0,
+                    "bit": 1,
+                    "start-bit": 0
+                },
+                {
+                    "name": "meas_mode",
+                    "value": 0,
+                    "bit": 1,
+                    "start-bit": 1
+                },
+                {
+                    "name": "en_disp",
+                    "value": 0,
+                    "bit": 1,
+                    "start-bit": 2
+                },
+                {
+                    "name": "get_int_temp",
+                    "value": 0,
+                    "bit": 1,
+                    "start-bit": 3
+                },
+                {
+                    "name": "get_detect_5v",
+                    "value": 0,
+                    "bit": 1,
+                    "start-bit": 4
+                }
+            ]
+        },
+        {
+            "item": [{
+
+                "name": "set_over_temp_limit",
+                "value": 0,
+                "bit": 8,
+                "start-bit": 0
+            }]
+        },
+        {
+            "item": [{
+                    "name": "bus_volt_conv_time_ch1",
+                    "value": 0,
+                    "bit": 3,
+                    "start-bit": 0
+                },
+                {
+                    "name": "shunt_volt_conv_time_ch1",
+                    "value": 0,
+                    "bit": 3,
+                    "start-bit": 3
+                },
+                {
+                    "name": "limit_unit_prefix_ch1",
+                    "value": 0,
+                    "bit": 1,
+                    "start-bit": 6
+                },
+                {
+                    "name": "limit_unit_prefix_ch2",
+                    "value": 0,
+                    "bit": 1,
+                    "start-bit": 7
+                }
+            ]
+        },
+        {
+            "item": [{
+                    "name": "bus_volt_conv_time_ch2",
+                    "value": 0,
+                    "bit": 3,
+                    "start-bit": 0
+                },
+                {
+                    "name": "shunt_volt_conv_time_ch2",
+                    "value": 0,
+                    "bit": 3,
+                    "start-bit": 3
+                }
+            ]
+        },
+        {
+            "item": [{
+                    "name": "get_int_ch1",
+                    "value": 0,
+                    "bit": 1,
+                    "start-bit": 0
+                },
+                {
+                    "name": "get_int_ch2",
+                    "value": 0,
+                    "bit": 1,
+                    "start-bit": 1
+                },
+                {
+                    "name": "ale_trig_ch1",
+                    "value": 0,
+                    "bit": 3,
+                    "start-bit": 2
+                },
+                {
+                    "name": "ale_trig_ch2",
+                    "value": 0,
+                    "bit": 3,
+                    "start-bit": 5
+                }
+            ]
+        },
+        {
+            "item": [{
+                "name": "limit1_ch1",
+                "value": 0,
+                "bit": 8,
+                "start-bit": 0
+            }]
+        },
+        {
+            "item": [{
+                "name": "limit2_ch1",
+                "value": 0,
+                "bit": 8,
+                "start-bit": 0
+            }]
+        },
+        {
+            "item": [{
+                "name": "limit1_ch2",
+                "value": 0,
+                "bit": 8,
+                "start-bit": 0
+            }]
+        },
+        {
+            "item": [{
+                "name": "limit2_ch2",
+                "value": 0,
+                "bit": 8,
+                "start-bit": 0
+            }]
+        },
+        {
+            "item": [{
+                "name": "set_pwm0_duty",
+                "value": 0,
+                "bit": 8,
+                "start-bit": 0
+            }]
+        },
+        {
+            "item": [{
+                "name": "set_pwm1_duty",
+                "value": 0,
+                "bit": 8,
+                "start-bit": 0
+            }]
+        },
+        {
+            "item": [{
+                "name": "set_pwm_freq1",
+                "value": 0,
+                "bit": 8,
+                "start-bit": 0
+            }]
+        },
+        {
+            "item": [{
+                "name": "set_pwm_freq2",
+                "value": 0,
+                "bit": 8,
+                "start-bit": 0
+            }]
+        },
+        {
+            "item": [{
+                    "name": "get_adc0",
+                    "value": 0,
+                    "bit": 1,
+                    "start-bit": 0
+                },
+                {
+                    "name": "get_adc1",
+                    "value": 0,
+                    "bit": 1,
+                    "start-bit": 1
+                },
+                {
+                    "name": "get_vref_mcu",
+                    "value": 0,
+                    "bit": 1,
+                    "start-bit": 2
+                },
+                {
+                    "name": "get_temp_amb",
+                    "value": 0,
+                    "bit": 1,
+                    "start-bit": 3
+                },
+                {
+                    "name": "get_temp_mcu",
+                    "value": 0,
+                    "bit": 1,
+                    "start-bit": 4
+                },
+                {
+                    "name": "get_dig_in0",
+                    "value": 0,
+                    "bit": 1,
+                    "start-bit": 5
+                },
+                {
+                    "name": "get_dig_in1",
+                    "value": 0,
+                    "bit": 1,
+                    "start-bit": 6
+                },
+                {
+                    "name": "get_efficiency",
+                    "value": 0,
+                    "bit": 1,
+                    "start-bit": 7
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>REMDx Register Map</title>
+	<script>
+		function includeHTML() {
+			var z, i, elmnt, file, xhttp;
+			/* Loop through a collection of all HTML elements: */
+			z = document.getElementsByTagName("*");
+			for (i = 0; i < z.length; i++) {
+				elmnt = z[i];
+				/*search for elements with a certain atrribute:*/
+				file = elmnt.getAttribute("w3-include-html");
+				if (file) {
+					/* Make an HTTP request using the attribute value as the file name: */
+					xhttp = new XMLHttpRequest();
+					xhttp.onreadystatechange = function() {
+						if (this.readyState == 4) {
+							if (this.status == 200) {
+								elmnt.innerHTML = this.responseText;
+							}
+							if (this.status == 404) {
+								elmnt.innerHTML = "Page not found.";
+							}
+							/* Remove the attribute, and call this function once more: */
+							elmnt.removeAttribute("w3-include-html");
+							includeHTML();
+						}
+					}
+					xhttp.open("GET", file, true);
+					xhttp.send();
+					/* Exit the function: */
+					return;
+				}
+			}
+		}
+	</script>
+	<link rel="stylesheet" href="css/style_index.css">
+</head>
+
+<body>
+	<!-- <div class="grid-container">
+		<div class="grid-item grid-item-1">
+			<h2>
+				Register Map Overview
+			</h2>
+			<p>
+				Below you'll find a register map overview table, click on the register you are interested in to find
+				more information.
+			</p>
+			<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+				industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+				scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+				into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+				release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+				software like Aldus PageMaker including versions of Lorem Ipsum.
+			</p>
+			<img class="board-image" src="assets/remd_board.png" alt="">
+		</div>
+	</div> -->
+	<a name="map"></a>
+	<div class="grid-item grid-item-2" w3-include-html="pages/register_map.html"></div>
+	<script>
+		includeHTML();
+	</script>
+	<div class="grid-item grid-item-3" w3-include-html="pages/description.html"></div>
+	<script>
+		includeHTML();
+	</script>
+	</div>
+</body>
+
+</html>

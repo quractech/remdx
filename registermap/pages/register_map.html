@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style_map.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>
+        Register Map Overview
+    </h2>
+    <br>
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th colspan="3">REGISTER</th>
+                <th colspan="8">Bit Fields</th>
+                <th></th>
+            </tr>
+        </thead>
+        <thead>
+            <tr>
+                <th class="reg">NAME</th>
+                <th class="reg">HEX</th>
+                <th class="reg">DEC</th>
+                <th class="bit">7</th>
+                <th class="bit">6</th>
+                <th class="bit">5</th>
+                <th class="bit">4</th>
+                <th class="bit">3</th>
+                <th class="bit">2</th>
+                <th class="bit">1</th>
+                <th class="bit">0</th>
+                <th class="wr">Access</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>reg0</td>
+            <td>0x00</td>
+            <td>0</td>
+            <td colspan="8">
+                <a href="/pages/description.html#id0">
+                    [7:0] id0
+                </a>
+            </td>
+            <td>r</td>
+        </tr>
+        <tr>
+            <td>reg1</td>
+            <td>0x01</td>
+            <td>1</td>
+            <td colspan="8">
+                <a href="/pages/description.html#id1">
+                    [7:0] id1
+                </a>
+            <td>r</td>
+        </tr>
+        <tr>
+            <td>reg2</td>
+            <td>0x02</td>
+            <td>2</td>
+            <td>
+                <a href="/pages/description.html#en_pwm1" target="_blank">
+                    [7] en_pwm1
+                </a>
+            </td>
+            <td>
+                <a href="/pages/description.html#en_pwm0" target="_blank">
+                    [6] en_pwm0
+                </a>
+            </td>
+            <td>
+                <a href="/pages/description.html#get_int_in1" target="_blank">
+                    [5] get_int_in1
+                </a>
+            </td>
+            <td>
+                <a href="/pages/description.html#get_int_in0" target="_blank">
+                    [4] get_int_in0
+                </a>
+            </td>
+            <td>
+                <a href="/pages/description.html#set_dig_out1" target="_blank">
+                    [3] set_dig_out1
+                </a>
+            </td>
+            <td>
+                <a href="/pages/description.html#set_dig_out0" target="_blank">
+                    [2] set_dig_out0
+                </a>
+            </td>
+            <td>
+                <a href="/pages/description.html#set_led2" target="_blank">
+                    [1] set_led2
+                </a>
+            </td>
+            <td>
+                <a href="/pages/description.html#set_led1" target="_blank">
+                    [0] set_led1
+                </a>
+            </td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg3</td>
+            <td>0x03</td>
+            <td>3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <a href="/pages/description.html#get_detect_5v" target="_blank">
+                    [4] get_detect_5v
+                </a>
+            </td>
+            <td>
+                <a href="/pages/description.html#get_int_temp" target="_blank">
+                    [3] get_int_temp
+                </a>
+            </td>
+            <td>
+                <a href="/pages/description.html#en_disp" target="_blank">
+                    [2] en_disp
+                </a>
+            </td>
+            <td>
+                <a href="/pages/description.html#meas_mode" target="_blank">
+                    [1] meas_mode
+                </a>
+            </td>
+            <td>
+                <a href="/pages/description.html#auto_off_dis" target="_blank">
+                    [0] auto_off_dis
+                </a>
+            </td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg4</td>
+            <td>0x04</td>
+            <td>4</td>
+            <td colspan="8">
+                <a href="/pages/description.html#set_over_temp_limit" target="_blank">
+                    [7:0] set_over_temp_limit
+                </a>
+            </td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg5</td>
+            <td>0x05</td>
+            <td>5</td>
+            <td>
+                <a href="/pages/description.html#limit_unit_prefix_ch2" target="_blank">
+                    [7] limit_unit_prefix_ch2
+                </a>
+            </td>
+            <td>
+                <a href="/pages/description.html#limit_unit_prefix_ch1" target="_blank">
+                    [6] limit_unit_prefix_ch1
+                </a>
+            </td>
+            <td colspan="3">
+                <a href="/pages/description.html#shunt_volt_conv_time_ch1" target="_blank">
+                    [5:3] shunt_volt_conv_time_ch1
+                </a>
+            </td>
+            <td colspan="3">
+                <a href="/pages/description.html#bus_volt_conv_time_ch1" target="_blank">
+                    [2:0] bus_volt_conv_time_ch1
+                </a>
+            </td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg6</td>
+            <td>0x06</td>
+            <td>6</td>
+            <td></td>
+            <td></td>
+            <td colspan="3">
+                <a href="/pages/description.html#shunt_volt_conv_time_ch2" target="_blank">
+                    [5:3] shunt_volt_conv_time_ch2
+                </a>
+            </td>
+            <td colspan="3">
+                <a href="/pages/description.html#bus_volt_conv_time_ch2" target="_blank">
+                    [2:0] bus_volt_conv_time_ch2
+                </a>
+            </td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg7</td>
+            <td>0x07</td>
+            <td>7</td>
+            <td colspan="3">
+                <a href="/pages/description.html#ale_trig_ch2" target="_blank">
+                    [7:5] ale_trig_ch2
+                </a>
+            </td>
+            <td colspan="3">
+                <a href="/pages/description.html#ale_trig_ch1" target="_blank">
+                    [4:2] ale_trig_ch1
+                </a>
+            </td>
+            <td>
+                <a href="/pages/description.html#get_int_ch1" target="_blank">
+                    [1] get_int_ch2
+                </a>
+            </td>
+            <td>
+                <a href="/pages/description.html#get_int_ch1" target="_blank">
+                    [0] get_int_ch1
+                </a>
+            </td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg8</td>
+            <td>0x08</td>
+            <td>8</td>
+            <td colspan="8">
+                <a href="/pages/description.html#limit1_ch1" target="_blank">
+                    [7:0] limit1_ch1
+                </a>
+            </td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg9</td>
+            <td>0x09</td>
+            <td>9</td>
+            <td colspan="8">
+                <a href="/pages/description.html#limit2_ch1" target="_blank">
+                    [7:0] limit2_ch1
+                </a>
+            </td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg10</td>
+            <td>0x0A</td>
+            <td>10</td>
+            <td colspan="8">
+                <a href="/pages/description.html#limit1_ch2" target="_blank">
+                    [7:0] limit1_ch2
+                </a>
+            </td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg11</td>
+            <td>0x0B</td>
+            <td>11</td>
+            <td colspan="8">
+                <a href="/pages/description.html#limit2_ch2" target="_blank">
+                    [7:0] limit2_ch2
+                </a>
+            </td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg12</td>
+            <td>0x0C</td>
+            <td>12</td>
+            <td colspan="8">
+                <a href="/pages/description.html#set_pwm0_duty" target="_blank">
+                    [7:0]set_pwm0_duty
+                </a>
+            </td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg13</td>
+            <td>0x0D</td>
+            <td>13</td>
+            <td colspan="8">
+                <a href="/pages/description.html#set_pwm1_duty" target="_blank">
+                    [7:0] set_pwm1_duty
+                </a>
+            </td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg14</td>
+            <td>0x0E</td>
+            <td>14</td>
+            <td colspan="8">
+                <a href="/pages/description.html#set_pwm_freq1" target="_blank">
+                    [7:0] set_pwm_freq1
+                </a>
+            </td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg15</td>
+            <td>0x0F</td>
+            <td>15</td>
+            <td colspan="8">
+                <a href="/pages/description.html#set_pwm_freq2" target="_blank">
+                    [7:0] set_pwm_freq2
+                </a>
+            </td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg16</td>
+            <td>0x10</td>
+            <td>16</td>
+            <td>
+                <a href=""></a>
+                <!-- <a href="/pages/description.html#get_effiency" target="_blank">
+                    [7] get_effiency
+                </a> -->
+            </td>
+            <td>
+                <a href="/pages/description.html#get_dig_in1" target="_blank">
+                    [6] get_dig_in1
+                </a>
+            </td>
+            <td>
+                <a href="/pages/description.html#get_dig_in0" target="_blank">
+                    [5] get_dig_in0
+                </a>
+            </td>
+            <td>
+                <a href=""></a>
+                <!-- <a href="/pages/description.html#get_temp_mcu" target="_blank">
+                    [4] get_temp_mcu
+                </a> -->
+            </td>
+            <td>
+                <a href=""></a>
+                <!-- <a href="/pages/description.html#get_temp_amb" target="_blank">
+                    [3] get_temp_amb
+                </a> -->
+            </td>
+            <td>
+                <a href=""></a>
+                <!-- <a href="/pages/description.html#get_vref_mcu" target="_blank">
+                    [2] get_vref_mcu
+                </a> -->
+            </td>
+            <td>
+                <a href=""></a>
+                <!-- <a href="/pages/description.html#get_adc1" target="_blank">
+                    [1] get_adc1
+                </a> -->
+            </td>
+            <td>
+                <a href=""></a>
+                <!-- <a href="/pages/description.html#get_adc0" target="_blank">
+                    [0] get_adc0
+                </a> -->
+            </td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg17</td>
+            <td>0x11</td>
+            <td>17</td>
+            <td colspan="3">
+                <a href="/pages/description.html#ina226_mode_ch1" target="_blank">
+                    [7:5] ina226_mode_ch1
+                </a>
+            </td>
+            <td colspan="3">
+                <a href="/pages/description.html#ina226_avg_ch1" target="_blank">
+                    [4:2] ina226_avg_ch1
+                </a>
+            </td>
+            <td>
+                <a href="/pages/description.html#save_config" target="_blank">
+                    [1] save_config
+                </a>
+            </td>
+            <td>
+                <a href="/pages/description.html#restore_default" target="_blank">
+                    [0] restore_default
+                </a>
+            </td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg18</td>
+            <td>0x12</td>
+            <td>18</td>
+            <td colspan="3">
+                <a href="/pages/description.html#ina226_mode_ch2" target="_blank">
+                    [7:5] ina226_mode_ch2
+                </a>
+            </td>
+            <td colspan="3">
+                <a href="/pages/description.html#ina226_avg_ch2" target="_blank">
+                    [4:2] ina226_avg_ch2
+                </a>
+            </td>
+            <td></td>
+            <td colspan="1">
+                <a href="/pages/description.html#restart_device" target="_blank">
+                    [1] restart_device
+                </a>
+            </td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg19</td>
+            <td>0x13</td>
+            <td>19</td>
+            <td colspan="5">
+                <a href="/pages/description.html#ina226_rsh_base_ch1" target="_blank">
+                    [7:3] ina226_rsh_base_ch1
+                </a>
+            </td>
+            <td colspan="3">
+                <a href="/pages/description.html#[2:0] ina226_rsh_pwr_ch1" target="_blank">
+                    [2:0] ina226_rsh_pwr_ch1
+                </a>
+            </td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg20</td>
+            <td>0x14</td>
+            <td>20</td>
+            <td colspan="5">
+                <a href="/pages/description.html#ina226_rsh_base_ch2" target="_blank">
+                    [7:3] ina226_rsh_base_ch2
+                </a>
+            </td>
+            <td colspan="3">
+                <a href="/pages/description.html#ina226_rsh_pwr_ch2" target="_blank">
+                    [2:0] ina226_rsh_pwr_ch2
+                </a>
+            </td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg21</td>
+            <td>0x15</td>
+            <td>21</td>
+            <td colspan="7">
+                <a href="/pages/description.html#led1_blink_rate" target="_blank">
+                    [7:1] led1_blink_rate
+                </a>
+            </td>
+            <td>
+                <a href="/pages/description.html#blink_led1" target="_blank">
+                    [0] blink_led1
+                </a>
+            </td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg22</td>
+            <td>0x16</td>
+            <td>22</td>
+            <td colspan="7">
+                <a href="/pages/description.html#led2_blink_rate" target="_blank">
+                    [7:1] led2_blink_rate
+                </a>
+            </td>
+            <td>
+                <a href="/pages/description.html#blink_led2" target="_blank">
+                    [0] blink_led2
+                </a>
+            </td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg23</td>
+            <td>0x17</td>
+            <td>23</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg24</td>
+            <td>0x18</td>
+            <td>24</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg25</td>
+            <td>0x19</td>
+            <td>25</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg26</td>
+            <td>0x1A</td>
+            <td>26</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg27</td>
+            <td>0x1B</td>
+            <td>27</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg28</td>
+            <td>0x1C</td>
+            <td>28</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg29</td>
+            <td>0x1D</td>
+            <td>29</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg30</td>
+            <td>0x1E</td>
+            <td>30</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>rw</td>
+        </tr>
+        <tr>
+            <td>reg31</td>
+            <td>0x1F</td>
+            <td>31</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>rw</td>
+        </tr>
+
+</body>
+
+</html>

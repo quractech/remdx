@@ -1,0 +1,81 @@
+/* No CSS */
+/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap");
+
+:root {
+  /* --header-color: rgb(102, 102, 102); */
+  /* --header-color: rgb(108, 122, 73); */
+  /* --header-color: rgb(108, 122, 73); */
+  /* --bg-color: lightcyan; */
+  /* --bg_color: #6987c9; */
+  /* background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4); */
+  background: rgba(76, 175, 80, 0.3);
+  /* --bg-color: #343d52; */
+  /* --bg-color: #485063; */
+  /* --bg-color: #5d6475; */
+  /* --bg-color: #717786; */
+  /* --bg-color: #858b97; */
+  /* --header-color: rgb(97, 139, 153); */
+  /* --header-color: #7dace2; */
+  /* --register-color: lightblue; */
+  --register-color: var(--header-color);
+  /* --page-color: rgb(28, 28, 36); */
+  --page-color: var(var(--bg_color));
+  --bit-size: 200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto Mono";
+  background-color: var(--bg-color);
+  /* background-color: var(--bg-color); */
+  /* background: linear-gradient(to right top, #65dfc9, #6cdbeb); */
+  /* font-weight: 400; */
+  padding: 10px;
+  /* flex-direction: column; */
+  /* display: flex; */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.grid-item-1 {
+  /* background-color: lightcyan; */
+  /* object-position: bottom; */
+  order: 1;
+}
+
+.grid-item-2 {
+  /* background-color: lightcyan; */
+  order: 2;
+}
+
+.grid-item-3 {
+  /* background-color: lightcyan; */
+  order: 3;
+  /* object-position: bottom; */
+}
+
+.board-image {
+  height: 50%;
+  /* background-image: url(assets/code.jpg); */
+  /* background-size: 100%; */
+  /* background-color: #6987c9; */
+  /* align-self: center; */
+  /* background-size: auto; */
+}
