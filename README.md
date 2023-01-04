@@ -31,6 +31,7 @@ REMDx can be configured using [register map](https://quractech.github.io/remdx_r
 ## Getting Started
 ### Upgrading REMDx to newest firmware
 1. Download and install [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html)<br>
+2. 
 ![alt text](stm32cubeprogrammer.PNG){:height="50%" width="50%"}
 2. Connect REMDx to you PC with a USB cable that is capable of data transfer.
 3. On REMDx press and hold the BOOT button, then press RESET button and let go of both buttons.
@@ -40,7 +41,7 @@ REMDx can be configured using [register map](https://quractech.github.io/remdx_r
 ### Get REMDx to stream data
 7. Download and install [Realterm](https://realterm.sourceforge.io/index.html#downloads_Download) or similar terminal program.<br>
 <img src="https://realterm.sourceforge.io/realterm1.png" width=50%>
-8. Select the COMPORT, find it under Device Manager in windows<br><img src="comport.PNG" width=50%>
+8. Select the COMPORT, find it under Device Manager in windows<br> <img src="comport.PNG" width=50% heigh=50%>
 9. Select the BAUD RATE 115200 and connect, now you should see a contineous data stream as show in the picture below.<br>
 <img src="realterm_connect.png" width=50%>
 
