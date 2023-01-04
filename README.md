@@ -22,10 +22,17 @@ J9 connect
 - 2 PWM pins with selectable output voltage level (3.3V, 5V, and 12V)
 
 ### SD-card
-Micro-SDcard slot
+Micro-SDcard slot for saving stream data (stream data is serial from USB).
 ### Real-time plotting with python
 Data stream capability using USB for datalogging and visualization with python (see scripting folder)
 ### Register Map
-REMDx can be configured using [register map](https://quractech.github.io/remdx_registermap/), the configuration can be saved in EEPROM (default configuration can be restored), see [register map section](https://quractech.github.io/remdx_registermap/)
+REMDx can be configured using [register map](https://quractech.github.io/remdx_registermap/), the configuration can be saved in EEPROM (default configuration can be restored).
+
+## Getting Started
+1. Download and install [Realterm](https://realterm.sourceforge.io/index.html#downloads_Download) or similar terminal program.
+![RealTerm]([http://url/to/img.png](https://realterm.sourceforge.io/realterm1.png))
+
+
+
 
 
