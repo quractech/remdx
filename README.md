@@ -37,10 +37,10 @@ REMDx can be configured using [register map](https://quractech.github.io/remdx_r
 5. Download [FW.elf](https://github.com/quractech/remdx/blob/main/FW/Debug/FW.elf) file to your PC. Go back to STM32CubeProgrammer press "open file" then press download. Now REMDx should be programmed or updated to the newest Firmware.
 ### Get REMDx to stream data
 7. Download and install [Realterm](https://realterm.sourceforge.io/index.html#downloads_Download) or similar terminal program.<br>
-<img src="https://realterm.sourceforge.io/realterm1.png" alt="Alt text" height="50%" width="50%">
-8. Select the COMPORT, find it under Device Manager in windows<br> <img src="comport.PNG" alt="Alt text" height="50%" width="50%">
+<img src="https://realterm.sourceforge.io/realterm1.png" height=50% width=50%>
+8. Select the COMPORT, find it under Device Manager in windows<br> <img src="comport.PNG" height=50% width=50%>
 9. Select the BAUD RATE 115200 and connect, now you should see a contineous data stream as show in the picture below.<br>
-<img src="realterm_connect.png" alt="Alt text" height="50%" width="50%">
+<img src="realterm_connect.png" height=50% width=50%>
 
 
 
