@@ -41,7 +41,7 @@ REMDx can be configured using [register map](https://quractech.github.io/remdx_r
 **COMMUNICATION PROTOCOL**<br>
 The REMDx should be written to as follows:<br>
 
-1. These **"\* L #"** 5 bytes are sent to the device as **numbers**. Where L is the length of the command sent next (L is always 5).<br>
+1. These **\* L #** 5 bytes are sent to the device as **numbers**. Where L is the length of the command sent next (L is always 5).<br>
 2. To write to or read from the device, a command of 5 bytes in **ASCII** is sent. <br>
 
 - Byte 1: Indicate the command to read or write
@@ -49,8 +49,8 @@ The REMDx should be written to as follows:<br>
 - Byte 4 and 5: Specify the data you are writing to the device. The last two bytes are not important when reading from a specific register.
 
 To indicate register and data to and from the device, hexadecimal numbers are utilized.
-<br>
-Use the latter **"w"** as the initial character of the command you are sending to the device if you want to **write** to a specific register.<br>
+<br><br>
+Use the letter **"w"** as the initial character of the command you are sending to the device if you want to **write** to a specific register.<br>
 
 **Example - writing to a register<br>**
 w0207<br>
@@ -58,7 +58,7 @@ w - to specify a write command<br>
 02 - register number 2 as hex value<br>
 07 - data writtin to register 2 as hex value.<br>
 
-Use the latter **"r"** as the initial character of the command you are sending to the device if you want to **read** from a specific register.
+Use the letter **"r"** as the initial character of the command you are sending to the device if you want to **read** from a specific register.
 <br>
 
 **Example - reading from a register<br>**
@@ -73,8 +73,8 @@ r - to specify a read command<br>
 
 1. Download and install [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html)<br> <img src="stm32cubeprogrammer.png" height=50% width=50%>
 2. Connect REMDx to you PC with a USB cable that is capable of data transfer.
-3. On REMDx press and hold the BOOT button, then press RESET button and let go of both buttons.
-4. Open STM32CubeProgrammer select USB (Blue dropdown menu), then press refresh untill "USB1" shows up on port (Serial number 2081325A4146), then connect.<br> <img src="connectstm32cubeprogrammer.png" height=50% width=50%>
+3. On REMDx press and hold the BOOT button, then press RESET button and let go of both buttons. This will put REMDx in programming mode.
+4. Open STM32CubeProgrammer select **USB** (Blue dropdown menu on the right column), then click **refresh** icon until "USB1" shows up on port (Serial number 2081325A4146), then click **connect**.<br> <img src="connectstm32cubeprogrammer.png" height=50% width=50%>
 5. Download [FW.elf](https://github.com/quractech/remdx/blob/main/FW/Debug/FW.elf) file to your PC. Go back to STM32CubeProgrammer press "open file" then press download. Now REMDx should be programmed or updated to the newest firmware.
 
 ### Get REMDx to stream data
