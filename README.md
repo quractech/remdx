@@ -30,11 +30,11 @@ REMDx can be configured using [register map](https://quractech.github.io/remdx_r
 
 ## Getting Started
 1. Download and install [Realterm](https://realterm.sourceforge.io/index.html#downloads_Download) or similar terminal program.
-![RealTerm](https://realterm.sourceforge.io/realterm1.png)
 <img src="https://realterm.sourceforge.io/realterm1.png" width=50%>
 
 2. Select the COMPORT, find it under Device Manager in windows
     ![Comport](comport.PNG)
+    <img src="comport.PNG" width=50%>
 3. Select the BAUD RATE 115200 and connect, now you should see a contineous data stream as show in the picture below.
 ![RealTerm Connect](realterm_connect.png)
 
