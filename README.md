@@ -12,7 +12,7 @@ The REMDx PCB
 ## Capability
 The REMDx is capable of measuring:
 - 2 channel voltage measurement 0-35V with resolution of approximately 1mV
-- 2 channel current measurement 0-8A  with resolution of approximately 250uA
+- 2 channel current measurement 0-8A  with resolution of approximately 250uA, coms with 10mOhm shunt resistor.
 - 2 channel power measurent
 - 2 channel burden voltage measurent
 ### PINOUT
@@ -27,6 +27,6 @@ Micro-SDcard slot
 ### Real-time plotting with python
 Data stream capability using USB for datalogging and visualization with python (see scripting folder)
 ### Register Map
-Can be configured using register map, the configuration can be saved in EEPROM (default configuration can be restored), see register map section
+REMDx can be configured using register map, the configuration can be saved in EEPROM (default configuration can be restored), see register map section
 
 
