@@ -29,7 +29,7 @@ Data stream capability using USB for datalogging and visualization with python (
 REMDx can be configured using [register map](https://quractech.github.io/remdx_registermap/), the configuration can be saved in EEPROM (default configuration can be restored).
 
 ## Getting Started
-1. Download and install [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html)<img src="stm32cubeprogrammer.PNG" width=50%>
+1. Download and install [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html)<br><img src="stm32cubeprogrammer.PNG" width=50%>
 2. Connect REMDx to you PC with a USB cable that is capable of data transfer.
 3. Press and hold the BOOT button on REMDx, then press RESET button and let go both buttons.
 5. Download and install [Realterm](https://realterm.sourceforge.io/index.html#downloads_Download) or similar terminal program.<br>
