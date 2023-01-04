@@ -1,4 +1,3 @@
-# REMDx
 The REMDx can measure 0-35V DC voltages with a resolution of 1mV, 0-8A DC currents with a resolution of 250uA (which can be modified), burden voltages, and power. Furthermore, all measurements can be performed over two channels.
 The REMDx (Realtime Efficiency Measurement Unit x) was originally intended to measure effeciency of Switch Mode Power Supplies hence the name REMDx, but later evolved to a datalogging device.
 
@@ -28,5 +27,5 @@ Micro-SDcard slot
 Data stream capability using USB for datalogging and visualization with python (see scripting folder)
 ### Register Map
 REMDx can be configured using register map, the configuration can be saved in EEPROM (default configuration can be restored), see register map section
-
+https://quractech.github.io/registermap/
 
