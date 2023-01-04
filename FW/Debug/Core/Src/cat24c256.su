@@ -1,0 +1,11 @@
+../Core/Src/cat24c256.c:25:10:bytestowrite	16	static
+../Core/Src/cat24c256.c:39:6:EEPROMWrite	64	static
+../Core/Src/cat24c256.c:82:6:EEPROMRead	64	static
+../Core/Src/cat24c256.c:110:6:EEPROMWriteNum	16	static
+../Core/Src/cat24c256.c:124:7:EEPROMReadNum	24	static
+../Core/Src/cat24c256.c:137:6:EEPROMPageErase	104	static
+../Core/Src/cat24c256.c:155:6:float2Bytes	24	static
+../Core/Src/cat24c256.c:175:7:bytes2Float	32	static
+../Core/Src/cat24c256.c:192:6:EEPROMWriteByte	48	static
+../Core/Src/cat24c256.c:206:6:EEPROMZeroPage	24	static
+../Core/Src/cat24c256.c:215:9:EEPROMReadByte	48	static

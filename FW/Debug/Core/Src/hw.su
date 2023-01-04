@@ -1,0 +1,9 @@
+../Core/Src/hw.c:10:6:displayEfficiency	72	static
+../Core/Src/hw.c:74:9:digRead	16	static
+../Core/Src/hw.c:94:6:digitalWrite	16	static
+../Core/Src/hw.c:113:6:restartMCU	8	static
+../Core/Src/hw.c:118:6:saveUserConfigData	24	static
+../Core/Src/hw.c:128:6:getSavedUserConfigData	32	static
+../Core/Src/hw.c:137:6:configHW	16	static
+../Core/Src/hw.c:154:6:enablePWM	16	static
+../Core/Src/hw.c:176:6:streamMeasurements	256	static

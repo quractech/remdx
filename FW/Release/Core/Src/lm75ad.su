@@ -1,0 +1,12 @@
+../Core/Src/lm75ad.c:10:6:lm75ad_setConfigReg	24	static
+../Core/Src/lm75ad.c:18:10:lm75ad_readTempReg	40	static
+../Core/Src/lm75ad.c:36:6:lm75ad_setTosLimit	32	static
+../Core/Src/lm75ad.c:60:10:lm75ad_readTosReg	40	static
+../Core/Src/lm75ad.c:74:7:lm75ad_getTosLimit	8	static
+../Core/Src/lm75ad.c:88:6:lm75ad_setThystLimit	32	static
+../Core/Src/lm75ad.c:112:10:lm75ad_readThystReg	40	static
+../Core/Src/lm75ad.c:125:7:lm75ad_getThystLimit	8	static
+../Core/Src/lm75ad.c:139:7:lm75ad_getTempValue	8	static
+../Core/Src/lm75ad.c:156:6:lm75ad_getData	16	static
+../Core/Src/lm75ad.c:164:6:lm75ad_turnOff	24	static
+../Core/Src/lm75ad.c:172:6:lm75ad_turnOn	24	static
