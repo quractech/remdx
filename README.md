@@ -34,7 +34,7 @@ REMDx can be configured using [register map](https://quractech.github.io/remdx_r
 
 2. Select the COMPORT, find it under Device Manager in windows
         <img src="comport.PNG" width=50%>
-3. Select the BAUD RATE 115200 and connect, now you should see a contineous data stream as show in the picture below.
+3. <br>Select the BAUD RATE 115200 and connect, now you should see a contineous data stream as show in the picture below.<\br>
         <img src="realterm_connect.png" width=50%>
 
 
