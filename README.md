@@ -22,7 +22,7 @@ J9 connect
 - 2 PWM pins with selectable output voltage level (3.3V, 5V, and 12V)
 
 ### SD-card
-Micro-SDcard slot for saving stream data (stream data is serial from USB).
+Micro-SDcard slot for saving stream data (stream data is serial data from USB).
 ### Real-time plotting with python
 Data stream capability using USB for datalogging and visualization with python (see scripting folder)
 ### Register Map
