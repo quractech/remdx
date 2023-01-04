@@ -30,8 +30,9 @@ REMDx can be configured using [register map](https://quractech.github.io/remdx_r
 
 ## Getting Started
 1. Download and install [Realterm](https://realterm.sourceforge.io/index.html#downloads_Download) or similar terminal program.
-[http://url/to/img.png](https://realterm.sourceforge.io/realterm1.png)
+![RealTerm](https://realterm.sourceforge.io/realterm1.png)
 
+''[![YouTube Video](https://img.youtube.com/vi/_4wK_u57eqA/maxresdefault.jpg)](https://www.youtube.com/embed/videoseries?list=PLivrBlTrqPpaUyPcGpUUAaZgcAJCYTLqt)
 
 
 
