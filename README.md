@@ -22,10 +22,11 @@ J9 connect PINOUT
 - 2 Digital output pins with selectable output voltage level (3.3V, 5V, and 12V)
 - 2 PWM pins with selectable output voltage level (3.3V, 5V, and 12V)
 
+### SD-card
 Micro-SDcard slot
-
+### Real-time plotting with python
 Data stream capability using USB for datalogging and visualization with python (see scripting folder)
-
+### Register Map
 Can be configured using register map, the configuration can be saved in EEPROM (default configuration can be restored), see register map section
 
 
