@@ -29,12 +29,12 @@ Data stream capability using USB for datalogging and visualization with python (
 REMDx can be configured using [register map](https://quractech.github.io/remdx_registermap/), the configuration can be saved in EEPROM (default configuration can be restored).
 
 ## Getting Started
-1. Download and install [Realterm](https://realterm.sourceforge.io/index.html#downloads_Download) or similar terminal program.
+1. Download and install [Realterm](https://realterm.sourceforge.io/index.html#downloads_Download) or similar terminal program.<br>
         <img src="https://realterm.sourceforge.io/realterm1.png" width=50%>
 
-2. Select the COMPORT, find it under Device Manager in windows
+2. Select the COMPORT, find it under Device Manager in windows<br>
         <img src="comport.PNG" width=50%>
-3. <br>Select the BAUD RATE 115200 and connect, now you should see a contineous data stream as show in the picture below.<\br>
+3. Select the BAUD RATE 115200 and connect, now you should see a contineous data stream as show in the picture below.<br>
         <img src="realterm_connect.png" width=50%>
 
 
