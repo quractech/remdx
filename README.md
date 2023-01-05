@@ -42,7 +42,7 @@ Data stream capability using USB for datalogging and visualization with python (
 4. Open STM32CubeProgrammer select **USB** (Blue dropdown menu on the right column), then click **refresh** icon until "USB1" shows up on port (Serial number 2081325A4146), then click **connect**.<br> <img src="connectstm32cubeprogrammer.png" height=50% width=50%>
 5. Download [FW.elf](https://github.com/quractech/remdx/blob/main/FW/Debug/FW.elf) file to your PC. Go back to STM32CubeProgrammer press "open file" then press download. Now REMDx should be programmed or updated to the newest firmware.
 
-### **Get REMDx to stream data**
+### **Get REMDx to Communicate**
 
 7. Download and install [Realterm](https://realterm.sourceforge.io/index.html#downloads_Download) or similar terminal program.<br>
    <img src="https://realterm.sourceforge.io/realterm1.png" height=50% width=50%>
@@ -56,15 +56,18 @@ REMDx can be configured using [register map](https://quractech.github.io/remdx_r
 
 **COMMUNICATION PROTOCOL**<br>
 The REMDx should be written to as follows:<br>
+<img src="protocol.png">
 
-1. These **\* L #** 5 bytes are sent to the device as **numbers**. Where L is the length of the command sent next (L is always 5).<br>
-2. To write to or read from the device, a command of 5 bytes in **ASCII** is sent. <br>
+1. A check command **"\* L #"** of 5 bytes ("" are not part of the command) are sent to the device as **numbers**. Where L is the length of the command sent next (L is always 5).<br>
+2. To write to or read from the device, a second command of 5 bytes in **ASCII** is sent. <br>
+   Before the second command (step 2) can be sent, the check command(step 1) must first be sent.<br>
+   The second command is referred to as **"the command"** from this point on.<br>
 
 - Byte 1: Indicate the command to read or write
 - Byte 2 and 3: Specify the register you are writing to or reading from.<br>
 - Byte 4 and 5: Specify the data you are writing to the device. The last two bytes are not important when reading from a specific register.
 
-To indicate register and data to and from the device, hexadecimal numbers are utilized.
+To indicate register data to and from the device, hexadecimal numbers are utilized.
 <br><br>
 Use the letter **"w"** as the initial character of the command you are sending to the device if you want to **write** to a specific register.<br>
 

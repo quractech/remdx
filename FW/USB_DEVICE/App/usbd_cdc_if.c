@@ -340,6 +340,7 @@ void USBReceiveHandler(uint8_t *buf, uint32_t *len)
 			if (USBRXDataBuffer[0] == '*' && USBRXDataBuffer[2] == '#')
 			{
 				USB_State = USB_APP;
+				printf("ACK\r\n");
 			}
 			else
 			{
