@@ -1,5 +1,5 @@
-The REMDx a board that is able to measure 0-35V DC voltage with a resolution of 1mV, 0-8A DC current with a resolution of 250uA (which can be modified), burden voltage, and power. Furthermore, all measurements can be performed over two channels.
-The REMDx (Realtime Efficiency Measurement Unit x) was originally intended to measure effeciency of Switch Mode Power Supplies / Linear Regulator hence the name REMDx, but later evolved to a datalogging device.
+The REMDx a board that is able to measure **0-35V DC voltage** with a resolution of 1mV, **0-8A DC current** with a resolution of 250uA (which can be modified), **burden voltage**, and **power**. Furthermore, all measurements can be performed over two channels.
+The REMDx (Realtime Efficiency Measurement Unit x) was originally intended to measure effeciency of Switch Mode Power Supplies / Linear Regulator hence the name REMDx, but later evolved to a datalogging device. See the [schematic](https://github.com/quractech/remdx/blob/main/remd_scheamtic.pdf) of REMDx.
 
 Concept diagram of REMDx is shown below.
 ![Block diagram](concept_white.png)
@@ -17,9 +17,7 @@ The REMDx is capable of measuring:
 - 2 channel power measurent
 - 2 channel burden voltage measurent
 
-### PINOUT
-
-J9 connect
+### J9 CONNECTOR PINOUT
 
 - 4 Digital input pins max. 3.3V (INTx - interrupt pins)
 - 2 Analog input pins max 3.3V (MCU ADC with 12bit)
@@ -33,6 +31,24 @@ Micro-SDcard slot for saving stream data (stream data is serial data from USB).
 ### Real-time plotting with python
 
 Data stream capability using USB for datalogging and visualization with python (see scripting folder)
+
+## Getting Started
+
+### **Upgrading REMDx to the most recent firmware**
+
+1. Download and install [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html)<br> <img src="stm32cubeprogrammer.png" height=50% width=50%>
+2. Connect REMDx to you PC with a USB cable that is capable of data transfer.
+3. On REMDx press and hold the BOOT button, then press RESET button and let go of both buttons. This will put REMDx in programming mode.
+4. Open STM32CubeProgrammer select **USB** (Blue dropdown menu on the right column), then click **refresh** icon until "USB1" shows up on port (Serial number 2081325A4146), then click **connect**.<br> <img src="connectstm32cubeprogrammer.png" height=50% width=50%>
+5. Download [FW.elf](https://github.com/quractech/remdx/blob/main/FW/Debug/FW.elf) file to your PC. Go back to STM32CubeProgrammer press "open file" then press download. Now REMDx should be programmed or updated to the newest firmware.
+
+### **Get REMDx to stream data**
+
+7. Download and install [Realterm](https://realterm.sourceforge.io/index.html#downloads_Download) or similar terminal program.<br>
+   <img src="https://realterm.sourceforge.io/realterm1.png" height=50% width=50%>
+8. Select the COMPORT, find it under Device Manager in windows<br> <img src="comport.png" height=50% width=50%>
+9. Select the BAUD RATE 115200 and connect, now you should see a contineous data stream as show in the picture below.<br>
+   <img src="realterm_connect.png" height=50% width=50%>
 
 ### Register Map
 
@@ -57,7 +73,8 @@ w0207<br>
 w - to specify a write command<br>
 02 - register number 2 as hex value<br>
 07 - data writtin to register 2 as hex value.<br>
-
+Relating to register map:<br>
+<br>
 Use the letter **"r"** as the initial character of the command you are sending to the device if you want to **read** from a specific register.
 <br>
 
@@ -66,21 +83,3 @@ r0200<br>
 r - to specify a read command<br>
 02 - register number 2 as hex value<br>
 00 - Not important when reading a register.<br>
-
-## Getting Started
-
-### **Upgrading REMDx to the most recent firmware**
-
-1. Download and install [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html)<br> <img src="stm32cubeprogrammer.png" height=50% width=50%>
-2. Connect REMDx to you PC with a USB cable that is capable of data transfer.
-3. On REMDx press and hold the BOOT button, then press RESET button and let go of both buttons. This will put REMDx in programming mode.
-4. Open STM32CubeProgrammer select **USB** (Blue dropdown menu on the right column), then click **refresh** icon until "USB1" shows up on port (Serial number 2081325A4146), then click **connect**.<br> <img src="connectstm32cubeprogrammer.png" height=50% width=50%>
-5. Download [FW.elf](https://github.com/quractech/remdx/blob/main/FW/Debug/FW.elf) file to your PC. Go back to STM32CubeProgrammer press "open file" then press download. Now REMDx should be programmed or updated to the newest firmware.
-
-### Get REMDx to stream data
-
-7. Download and install [Realterm](https://realterm.sourceforge.io/index.html#downloads_Download) or similar terminal program.<br>
-   <img src="https://realterm.sourceforge.io/realterm1.png" height=50% width=50%>
-8. Select the COMPORT, find it under Device Manager in windows<br> <img src="comport.png" height=50% width=50%>
-9. Select the BAUD RATE 115200 and connect, now you should see a contineous data stream as show in the picture below.<br>
-   <img src="realterm_connect.png" height=50% width=50%>

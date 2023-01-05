@@ -24,7 +24,7 @@ void registerMap(uint8_t *cmd)
 	guserEnteredData = (uint8_t) (strtol(&cmd[3], NULL, 16));
 
 	// Create an array of function pointers, one for each case in the switch statement
-	regHandlerFunc regHandlers[] =
+	regHandlerFunc regHandlers[NO_REGISTERS] =
 	{ &reg0Handler, &reg1Handler, &reg2Handler, &reg3Handler, &reg4Handler, &reg5Handler, &reg6Handler, &reg7Handler,
 			&reg8Handler, &reg9Handler, &reg10Handler, &reg11Handler, &reg12Handler, &reg13Handler, &reg14Handler,
 			&reg15Handler, &reg16Handler, &reg17Handler, &reg18Handler, &reg19Handler, &reg20Handler, &reg21Handler,

@@ -36,7 +36,7 @@
 #define MIN_FREQ	20
 #define MAX_FREQ	50000
 
-#define DEBUG_
+//#define DEBUG_
 #ifdef DEBUG_
 #define LOGS(x) 	printf("%s\r\n",x);
 #define LOGI( x, y) printf("%s=%d\r\n",x,y);
