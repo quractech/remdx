@@ -1,3 +1,5 @@
+# REMDx
+
 The REMDx a board that is able to measure **0-35V DC voltage** with a resolution of 1mV, **0-8A DC current** with a resolution of 250uA (which can be modified), **burden voltage**, and **power**. Furthermore, all measurements can be performed over two channels.
 The REMDx (Realtime Efficiency Measurement Unit x) was originally intended to measure effeciency of Switch Mode Power Supplies / Linear Regulator hence the name REMDx, but later evolved to a datalogging device. See the [schematic](https://github.com/quractech/remdx/blob/main/remd_scheamtic.pdf) of REMDx.
 
@@ -37,7 +39,7 @@ Data stream capability using USB for datalogging and visualization with python (
 ### **Upgrading REMDx to the most recent firmware**
 
 1. Download and install [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html)<br>
-   <img src="stm32cubeprogrammer.png" width=50%>
+   <img src="stm32cubeprogrammer.png" width="300">
    <!-- ![stm32cudeProgrammer](stm32cubeprogrammer.png) -->
 2. Connect REMDx to you PC with a USB cable that is capable of data transfer.
 3. On REMDx press and hold the BOOT button, then press RESET button and let go of both buttons. This will put REMDx in programming mode.
