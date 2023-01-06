@@ -63,8 +63,9 @@ The REMDx should be written to as follows:<br>
 
 1. A check command **"\* L #"** of 5 bytes ("" are not part of the command) are sent to the device as **numbers**. Where L is the length of the command sent next (L is always 5).<br>
 2. To write to or read from the device, a second command of 5 bytes in **ASCII** is sent. <br>
-   Before the second command (step 2) can be sent, the check command(step 1) must first be sent.<br>
-   The second command is referred to as **"the command"** from this point on.<br>
+
+The check command (step 1) must first be successfully received before the second command (step 2) may be sent.<br>
+The second command is referred to as **"the command"** from this point on.<br>
 
 - Byte 1: Indicate the command to read or write
 - Byte 2 and 3: Specify the register you are writing to or reading from.<br>
