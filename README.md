@@ -36,7 +36,7 @@ Data stream capability using USB for datalogging and visualization with python (
 
 ### **Upgrading REMDx to the most recent firmware**
 
-1. Download and install [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html)<br> <img src="./stm32cubeprogrammer.png" height=50% width=50%>
+1. Download and install [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html)<br> <img src="stm32cubeprogrammer.png">
 2. Connect REMDx to you PC with a USB cable that is capable of data transfer.
 3. On REMDx press and hold the BOOT button, then press RESET button and let go of both buttons. This will put REMDx in programming mode.
 4. Open STM32CubeProgrammer select **USB** (Blue dropdown menu on the right column), then click **refresh** icon until "USB1" shows up on port (Serial number 2081325A4146), then click **connect**.<br> <img src="./connectstm32cubeprogrammer.png" height=50% width=50%>
