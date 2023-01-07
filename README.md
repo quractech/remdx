@@ -93,7 +93,10 @@ w0207
 w - to specify a write command<br>
 02 - register number 2 as hex value<br>
 07 - data writtin to register 2 as hex value.<br>
-Relating to register map:<br>
+Relating to the register map:<br>
+**_set_led1_=1**<br>
+**_set_led2_=1**<br>
+as a result of this command the onboard LEDs should turn on
 <br>
 
 Use the letter **"r"** as the initial character of the command you are sending to the device if you want to **read** from a specific register.
@@ -107,5 +110,5 @@ r0200
 r - to specify a read command<br>
 02 - register number 2 as hex value<br>
 00 - Not important when reading a register.<br>
-
+Outcome of RealTerm<br>
 <img src="registermap_example.png" width="50%">
