@@ -39,19 +39,19 @@ Data stream capability using USB for datalogging and visualization with python (
 ### **Upgrading REMDx to the most recent firmware**
 
 1. Download and install [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html)<br>
-   <img src="stm32cubeprogrammer.png" width="50%">
+   <img src="stm32cubeprogrammer.png" width="75%">
 2. Connect REMDx to you PC with a USB cable that is capable of data transfer.
 3. On REMDx press and hold the BOOT button, then press RESET button and let go of both buttons. This will put REMDx in programming mode.
-4. Open STM32CubeProgrammer select **USB** (Blue dropdown menu on the right column), then click **refresh** icon until "USB1" shows up on port (Serial number 2081325A4146), then click **connect**.<br> <img src="./connectstm32cubeprogrammer.png" width="50%">
+4. Open STM32CubeProgrammer select **USB** (Blue dropdown menu on the right column), then click **refresh** icon until "USB1" shows up on port (Serial number 2081325A4146), then click **connect**.<br> <img src="./connectstm32cubeprogrammer.png" width="75%">
 5. Download [FW.elf](https://github.com/quractech/remdx/blob/main/FW/Debug/FW.elf) file to your PC. Go back to STM32CubeProgrammer press "open file" then press download. Now REMDx should be programmed or updated to the newest firmware.
 
 ### **Get REMDx to Communicate**
 
 7. Download and install [Realterm](https://realterm.sourceforge.io/index.html#downloads_Download) or similar terminal program.<br>
-   <img src="https://realterm.sourceforge.io/realterm1.png" width="50%">
-8. Select the COMPORT, find it under Device Manager in windows<br> <img src="comport.png" height="50%" width="50%">
+   <img src="https://realterm.sourceforge.io/realterm1.png" width="75%">
+8. Select the COMPORT, find it under Device Manager in windows<br> <img src="comport.png" height="75%" width="75%">
 9. Select the BAUD RATE 115200 and connect, now you should see a contineous data stream as show in the picture below.<br>
-   <img src="realterm_connect.png" height="50%" width="50%">
+   <img src="realterm_connect.png" height="75%" width="75%">
 
 ### Register Map
 
@@ -111,4 +111,4 @@ r - to specify a read command<br>
 02 - register number 2 as hex value<br>
 00 - Not important when reading a register.<br>
 Outcome of RealTerm<br>
-<img src="registermap_example.png" width="50%">
+<img src="registermap_example.png" width="75%">
