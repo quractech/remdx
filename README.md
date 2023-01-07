@@ -75,8 +75,11 @@ To indicate register data to and from the device, hexadecimal numbers are utiliz
 <br><br>
 Use the letter **"w"** as the initial character of the command you are sending to the device if you want to **write** to a specific register.<br>
 
-**Example - writing to a register<br>**
-w0207<br>
+```bash
+[Writing 0x07 to register 2]
+w0207
+```
+
 w - to specify a write command<br>
 02 - register number 2 as hex value<br>
 07 - data writtin to register 2 as hex value.<br>
@@ -85,8 +88,11 @@ Relating to register map:<br>
 Use the letter **"r"** as the initial character of the command you are sending to the device if you want to **read** from a specific register.
 <br>
 
-**Example - reading from a register<br>**
-r0200<br>
+```bash
+[Reading the content of register 2]
+r0200
+```
+
 r - to specify a read command<br>
 02 - register number 2 as hex value<br>
 00 - Not important when reading a register.<br>
