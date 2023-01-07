@@ -68,8 +68,8 @@ The check command (step 1) must first be successfully received before the second
 The second command is referred to as **"the command"** from this point on.<br>
 
 - Byte 1: Indicate the command to read or write
-- Byte 2 and 3: Specify the register you are writing to or reading from.<br>
-- Byte 4 and 5: Specify the data you are writing to the device. The last two bytes are not important when reading from a specific register.
+- Byte 2 and 3: Specify the register you are writing to or reading from (32 registers are available for read or write operation).<br>
+- Byte 4 and 5: Specify the data you are writing to the device. When reading from a register, ignore these two bytes and set them to 0.
 
 To indicate register data to and from the device, hexadecimal numbers are utilized.
 <br><br>
