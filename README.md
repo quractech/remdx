@@ -75,6 +75,16 @@ To indicate register data to and from the device, hexadecimal numbers are utiliz
 <br><br>
 Use the letter **"w"** as the initial character of the command you are sending to the device if you want to **write** to a specific register.<br>
 
+### Write and Read Example
+
+Connect REMDx to your PC and open RealTerm.<br>
+To stop stream data from REMDx, set the **_meas_mode_** bit to 0, see [register map](https://quractech.github.io/remdx_registermap/)<br>
+
+```bash
+[Stop stream data]
+w0304
+```
+
 ```bash
 [Writing 0x07 to register 2]
 w0207
@@ -85,6 +95,7 @@ w - to specify a write command<br>
 07 - data writtin to register 2 as hex value.<br>
 Relating to register map:<br>
 <br>
+
 Use the letter **"r"** as the initial character of the command you are sending to the device if you want to **read** from a specific register.
 <br>
 
@@ -96,3 +107,5 @@ r0200
 r - to specify a read command<br>
 02 - register number 2 as hex value<br>
 00 - Not important when reading a register.<br>
+
+<img src="registermap_example.png" width="50%">
