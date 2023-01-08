@@ -59,13 +59,13 @@ REMDx can be configured using [register map](https://quractech.github.io/remdx_r
 
 **COMMUNICATION PROTOCOL**<br>
 The REMDx should be written to as follows:<br>
-<img src="./protocol.png">
 
 1. A check command **"\* L #"** of 5 bytes ("" are not part of the command) are sent to the device as **numbers**. Where L is the length of the command sent next (L is always 5).<br>
 2. To write to or read from the device, a second command of 5 bytes in **ASCII** is sent. <br>
 
+<img src="./protocol.png">
 The check command (step 1) must first be successfully received before the second command (step 2) may be sent.<br>
-The second command is referred to as **"the command"** from this point on.<br>
+The second command is referred to as "the command" from this point on.<br>
 
 - Byte 1: Indicate the command to read or write
 - Byte 2 and 3: Specify the register you are writing to or reading from (32 registers are available for read or write operation).<br>
