@@ -251,7 +251,7 @@ void startUSBTask(void const *argument)
 	/* Infinite loop */
 	for (;;)
 	{
-//		printf("regMapUpdateFlag=%d\r\n", regMapUpdateFlag);
+//		printf("g_regMapUpdateFlag=%d\r\n", g_regMapUpdateFlag);
 		streamMeasurements(&newSetupData, &lm75adAmbTemp, &channel1Data, &channel2Data);
 //		printf("id0 = %d\r\n", newSetupData.setRegister.id0);
 		osDelay(USBUpdateTime);
@@ -275,7 +275,6 @@ void startOLEDUpdateTask(void const *argument)
 		displayEfficiency(1, &channel1Data, &channel2Data, &lm75adAmbTemp);
 		osDelay(OLEDUpdateTime);
 	}
-	/* USER CODE END startOLEDUpdateTask */
 }
 
 /* USER CODE BEGIN Header_startFetchReadingTask */
@@ -325,10 +324,10 @@ void startRegUpdateTask(void const *argument)
 	for (;;)
 	{
 		configHW(&newSetupData, g_HWUpdateFlag);
-		if (regMapUpdateFlag)
+		if (g_regMapUpdateFlag)
 		{
 			registerMap(USBRXDataBuffer);
-			regMapUpdateFlag = 0;
+			g_regMapUpdateFlag = 0;
 		}
 
 		osDelay(100);

@@ -53,7 +53,7 @@ Data stream capability using USB for datalogging and visualization with python (
 9. Select the BAUD RATE 115200 and connect, now you should see a contineous data stream as show in the picture below.<br>
    <img src="realterm_connect.png" height="75%" width="75%">
 
-### Register Map
+### **Register Map**
 
 REMDx can be configured using [register map](https://quractech.github.io/remdx_registermap/), the configuration can be saved in EEPROM (default configuration can be restored).
 
@@ -75,7 +75,7 @@ To indicate register data to and from the device, hexadecimal numbers are utiliz
 <br><br>
 Use the letter **"w"** as the initial character of the command you are sending to the device if you want to **write** to a specific register.<br>
 
-### Write and Read Example
+### **Write and Read Example**
 
 Connect REMDx to your PC and open RealTerm.<br>
 To stop stream data from REMDx, set the **_meas_mode_** bit to 0, see [register map](https://quractech.github.io/remdx_registermap/)<br>
@@ -112,3 +112,38 @@ r - to specify a read command<br>
 00 - Not important when reading a register.<br>
 Outcome of RealTerm<br>
 <img src="registermap_example.png" width="75%">
+
+### **Python scripting**
+
+Python scripting can be used to reconfigure the REMDx and to visualize live data.
+
+```python
+from matplotlib.animation import FuncAnimation
+import matplotlib.pyplot as plt
+import time
+from datacontrol import dataCTRLMaster
+from plotcontrol import plotMaster
+remd = dataCTRLMaster()
+
+# LED Example
+print(f"set_led1 = {remd.set_led1}")
+remd.set_led1 = 1
+print(f"set_led1 = {remd.set_led1}")
+print(f"set_led2 = {remd.set_led2}")
+remd.set_led2 = 1
+print(f"set_led2 = {remd.set_led2}")
+```
+
+Live plot of bus voltage of channel1.
+
+```python
+from matplotlib.animation import FuncAnimation
+import matplotlib.pyplot as plt
+import time
+from datacontrol import dataCTRLMaster
+from plotcontrol import plotMaster
+remd = dataCTRLMaster()
+
+# LED Example
+plotter.plotData(1)
+```

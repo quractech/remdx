@@ -52,7 +52,7 @@
 extern uint8_t USBRXDataReady;
 extern uint8_t USBRXDataLength;
 extern uint8_t *USBRXDataBuffer;
-extern uint8_t regMapUpdateFlag;
+extern uint8_t g_regMapUpdateFlag;
 extern uint8_t guserEnteredData;
 
 extern float lm75adAmbTemp;

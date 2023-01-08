@@ -348,7 +348,7 @@ void USBReceiveHandler(uint8_t *buf, uint32_t *len)
 			}
 			break;
 		case USB_APP:
-			regMapUpdateFlag = 1;
+			g_regMapUpdateFlag = 1;
 			USB_State = USB_START;
 			break;
 	}

@@ -7,6 +7,6 @@
 ../Core/Src/freertos.c:214:6:startLED1Task	16	static
 ../Core/Src/freertos.c:248:6:startUSBTask	16	static
 ../Core/Src/freertos.c:269:6:startOLEDUpdateTask	16	static
-../Core/Src/freertos.c:288:6:startFetchReadingTask	16	static
-../Core/Src/freertos.c:321:6:startRegUpdateTask	16	static
-../Core/Src/freertos.c:346:6:startLED2Task	16	static
+../Core/Src/freertos.c:287:6:startFetchReadingTask	16	static
+../Core/Src/freertos.c:320:6:startRegUpdateTask	16	static
+../Core/Src/freertos.c:345:6:startLED2Task	16	static

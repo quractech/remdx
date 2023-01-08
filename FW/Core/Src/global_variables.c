@@ -9,7 +9,7 @@
 uint8_t USBRXDataReady = 0;
 uint8_t USBRXDataLength = 0;
 uint8_t *USBRXDataBuffer;
-uint8_t regMapUpdateFlag = 0;
+uint8_t g_regMapUpdateFlag = 0;
 
 uint8_t guserEnteredData;
 
