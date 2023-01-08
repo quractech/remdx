@@ -119,9 +119,6 @@ Live data visualization and REMDx reconfiguration are also possible with Python 
 Here is some sample code to turn on led1 and led2.
 
 ```python
-from matplotlib.animation import FuncAnimation
-import matplotlib.pyplot as plt
-import time
 from datacontrol import dataCTRLMaster
 from plotcontrol import plotMaster
 remd = dataCTRLMaster()
@@ -138,9 +135,6 @@ print(f"set_led2 = {remd.set_led2}")
 Example code for live plot of bus voltage of channel1.
 
 ```python
-from matplotlib.animation import FuncAnimation
-import matplotlib.pyplot as plt
-import time
 from datacontrol import dataCTRLMaster
 from plotcontrol import plotMaster
 remd = dataCTRLMaster()
