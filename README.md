@@ -139,7 +139,7 @@ from datacontrol import dataCTRLMaster
 from plotcontrol import plotMaster
 remd = dataCTRLMaster()
 
-# LED Example
+# Example - Live plot of the bus voltage of channel 1
 plotter.plotData(1)
 ```
 
