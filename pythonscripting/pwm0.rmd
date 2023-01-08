@@ -1,0 +1,23 @@
+// Enable pwm 0, led 1 and led 2
+w026F
+w02c7   // Enable pwm0/1 + LED1
+// Set pwm 0 duty cycle to 50%
+w0c32
+w0d19   // PWM1 duty cycle 25%
+
+// Set pwm frequency to 50kHz
+// Set the least significant byte of pwm freq
+w0e50   // 80Hz
+// Set the most significant byte of pwm freq
+w0fc3   // 49.92kHz
+
+//w1515
+//w1629
+
+// Set pwm frequency to 1kHz
+//w0ee8   // 232Hz
+//w0f03   // 768Hz
+
+// Set pwm frequency to 10kHz
+//w0e10   // 16Hz
+//w0f27   // 9984Hz

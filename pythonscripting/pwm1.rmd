@@ -1,0 +1,11 @@
+// Enable pwm 1
+w0280
+// Set pwm 0 duty cycle to 50%
+w0d32
+// Set pwm frequency to 50kHz
+// Set the least significant byte of pwm freq 0xd0
+w0ed0
+//w0ee8
+// Set the most significant byte of pwm freq 0xc3
+w0f07
+//w0f03// 1kHz

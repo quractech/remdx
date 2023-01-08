@@ -115,7 +115,8 @@ Outcome of RealTerm<br>
 
 ### **Python scripting**
 
-Python scripting can be used to reconfigure the REMDx and to visualize live data.
+Live data visualization and REMDx reconfiguration are also possible with Python scripting. <br>
+Here is some sample code to turn on led1 and led2.
 
 ```python
 from matplotlib.animation import FuncAnimation
@@ -134,7 +135,7 @@ remd.set_led2 = 1
 print(f"set_led2 = {remd.set_led2}")
 ```
 
-Live plot of bus voltage of channel1.
+Example code for live plot of bus voltage of channel1.
 
 ```python
 from matplotlib.animation import FuncAnimation
@@ -147,3 +148,5 @@ remd = dataCTRLMaster()
 # LED Example
 plotter.plotData(1)
 ```
+
+<img src="liveplotvoltage.png">
