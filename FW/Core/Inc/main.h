@@ -58,7 +58,6 @@ extern "C" {
 
 /* Exported macro ------------------------------------------------------------*/
 /* USER CODE BEGIN EM */
-#define FIRSTTIMEPROG		0
 #define EEPROMLoadPage		9
 #define EEPROMDefaultPage 	10
 #define EEPROMCustomPage 	12

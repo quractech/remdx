@@ -197,6 +197,8 @@ extern SetupData_t newSetupData;
 extern SetupData_t defaultSetupData;
 extern SetupData_t customSetupData;
 extern RegisterNumber_e registerNumber;
+extern SetupDataState_e SetupDataState;
+extern RegisterData_t regBuffer[NO_REGISTERS];
 
 // Define a function pointer type
 typedef void (*regHandlerFunc)();

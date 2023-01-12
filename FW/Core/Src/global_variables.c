@@ -17,8 +17,10 @@ float lm75adAmbTemp = 0.0;
 uint32_t adc_data[4] =
 { 0 };
 uint8_t g_HWUpdateFlag = 0;
-volatile uint8_t g_ina226Ch1ConfigChangeFlag = 0; // This flag set when the user needs to change the configuration of ina226
-volatile uint8_t g_ina226Ch2ConfigChangeFlag = 0; // This flag set when the user needs to change the configuration of ina226
+uint8_t g_ina226Ch1ConfigChangeFlag = 0; // This flag set when the user needs to change the configuration of ina226
+uint8_t g_ina226Ch2ConfigChangeFlag = 0; // This flag set when the user needs to change the configuration of ina226
+uint8_t g_ina226Ch1ConfigUpdateFlag = 0;
+uint8_t g_ina226Ch2ConfigUpdateFlag = 0;
 
 float stm32Temp = 0;
 float stm32Vref = 0;

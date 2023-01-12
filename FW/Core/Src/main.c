@@ -39,7 +39,8 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define CMD_SIZE 3
+//#define CMD_SIZE 3
+#define FIRSTTIMEPROG		0
 
 /* USER CODE END PD */
 
@@ -131,8 +132,32 @@ int main(void)
 //	PWMInit(1000);
 //	run_pwm_out0(1);
 //	run_pwm_out1(1);
-	defaultSettings(&defaultSetupData);
-	newSetupData = defaultSetupData;
+	SetupDataState = EEPROMReadByte(EEPROMLoadPage, 0);
+	if (FIRSTTIMEPROG)
+	{
+		defaultSettings(&defaultSetupData);
+		saveUserConfigData(EEPROMDefaultPage, regBuffer);
+		EEPROMWriteByte(EEPROMLoadPage, 0, (uint8_t*) (1));
+		newSetupData = defaultSetupData;
+	}
+	else
+	{
+		if (SetupDataState == loadCustomSetupData)
+		{
+			getSavedUserConfigData(EEPROMCustomPage, regBuffer);
+			//			loadSettingFromBuffer(&customSetupData, regBuffer);
+			newSetupData = customSetupData;
+		}
+		else
+		{
+			g_ina226Ch1ConfigUpdateFlag = 1;
+			g_ina226Ch2ConfigUpdateFlag = 1;
+			getSavedUserConfigData(EEPROMDefaultPage, regBuffer);
+			loadSettingFromBuffer(&defaultSetupData, regBuffer);
+			//			defaultSettings(&defaultSetupData);
+			newSetupData = defaultSetupData;
+		}
+	}
 	g_HWUpdateFlag = 1;
 
 	/* USER CODE END 2 */

@@ -63,6 +63,8 @@ extern float ina_in0;
 extern float ina_in1;
 
 extern uint8_t g_HWUpdateFlag;
-extern volatile uint8_t g_ina226Ch1ConfigChangeFlag;
-extern volatile uint8_t g_ina226Ch2ConfigChangeFlag;
+extern uint8_t g_ina226Ch1ConfigChangeFlag;
+extern uint8_t g_ina226Ch2ConfigChangeFlag;
+extern uint8_t g_ina226Ch1ConfigUpdateFlag;
+extern uint8_t g_ina226Ch2ConfigUpdateFlag;
 #endif /* INC_GLOBAL_VARIABLES_H_ */
