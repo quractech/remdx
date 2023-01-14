@@ -8,8 +8,8 @@
 #ifndef INC_PWM_H_
 #define INC_PWM_H_
 
-//#include "main.h"
-#include "tim.h"
+#include "main.h"
+//#include "tim.h"
 //#include "stm32f4xx_hal.h"
 //#include "uart.h"
 //extern TIM_HandleTypeDef htim4;

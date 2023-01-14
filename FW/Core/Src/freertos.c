@@ -323,11 +323,15 @@ void startRegUpdateTask(void const *argument)
 	/* Infinite loop */
 	for (;;)
 	{
-		configHW(&newSetupData, g_HWUpdateFlag);
 		if (g_regMapUpdateFlag)
 		{
 			registerMap(USBRXDataBuffer);
 			g_regMapUpdateFlag = 0;
+		}
+		if (g_HWUpdateFlag)
+		{
+			configHW(&newSetupData, g_HWUpdateFlag);
+			g_HWUpdateFlag = 0;
 		}
 
 		osDelay(100);

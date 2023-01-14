@@ -40,6 +40,7 @@ extern "C" {
 #include "global_variables.h"
 #include "ssd1306.h"
 #include "ssd1306_conf.h"
+#include "tim.h"
 #include "pwm.h"
 #include "cat24c256.h"
 #include "ina226.h"

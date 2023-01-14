@@ -129,14 +129,12 @@ int main(void)
 	}
 	CDC_Transmit_FS((uint8_t*) "Starting USB\r\n", sizeof("Starting USB\r\n"));
 
-//	PWMInit(1000);
-//	run_pwm_out0(1);
-//	run_pwm_out1(1);
 	SetupDataState = EEPROMReadByte(EEPROMLoadPage, 0);
 	if (FIRSTTIMEPROG)
 	{
 		defaultSettings(&defaultSetupData);
 		saveUserConfigData(EEPROMDefaultPage, regBuffer);
+		saveUserConfigData(EEPROMCustomPage, regBuffer);
 		EEPROMWriteByte(EEPROMLoadPage, 0, (uint8_t*) (1));
 		newSetupData = defaultSetupData;
 	}
@@ -144,8 +142,10 @@ int main(void)
 	{
 		if (SetupDataState == loadCustomSetupData)
 		{
+			g_ina226Ch1ConfigUpdateFlag = 1;
+			g_ina226Ch2ConfigUpdateFlag = 1;
 			getSavedUserConfigData(EEPROMCustomPage, regBuffer);
-			//			loadSettingFromBuffer(&customSetupData, regBuffer);
+			loadSettingFromBuffer(&customSetupData, regBuffer);
 			newSetupData = customSetupData;
 		}
 		else
@@ -158,6 +158,8 @@ int main(void)
 			newSetupData = defaultSetupData;
 		}
 	}
+//	defaultSettings(&defaultSetupData);
+//	newSetupData = defaultSetupData;
 	g_HWUpdateFlag = 1;
 
 	/* USER CODE END 2 */

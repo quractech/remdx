@@ -57,8 +57,8 @@ Core/Src/global_variables.o: ../Core/Src/global_variables.c \
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
  ../USB_DEVICE/Target/usbd_conf.h ../Core/Inc/main.h \
  ../Core/Inc/global_variables.h ../Core/Inc/ssd1306.h \
- ../Core/Inc/ssd1306_conf.h ../Core/Inc/ssd1306_fonts.h ../Core/Inc/pwm.h \
- ../Core/Inc/tim.h ../Core/Inc/cat24c256.h ../Core/Inc/ina226.h \
+ ../Core/Inc/ssd1306_conf.h ../Core/Inc/ssd1306_fonts.h ../Core/Inc/tim.h \
+ ../Core/Inc/pwm.h ../Core/Inc/cat24c256.h ../Core/Inc/ina226.h \
  ../Core/Inc/lm75ad.h
 ../Core/Inc/global_variables.h:
 ../Core/Inc/main.h:
@@ -124,8 +124,8 @@ Core/Src/global_variables.o: ../Core/Src/global_variables.c \
 ../Core/Inc/ssd1306.h:
 ../Core/Inc/ssd1306_conf.h:
 ../Core/Inc/ssd1306_fonts.h:
-../Core/Inc/pwm.h:
 ../Core/Inc/tim.h:
+../Core/Inc/pwm.h:
 ../Core/Inc/cat24c256.h:
 ../Core/Inc/ina226.h:
 ../Core/Inc/lm75ad.h:

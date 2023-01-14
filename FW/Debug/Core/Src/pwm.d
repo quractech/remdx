@@ -1,5 +1,5 @@
-Core/Src/pwm.o: ../Core/Src/pwm.c ../Core/Inc/pwm.h ../Core/Inc/tim.h \
- ../Core/Inc/main.h ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+Core/Src/pwm.o: ../Core/Src/pwm.c ../Core/Inc/pwm.h ../Core/Inc/main.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../Core/Inc/stm32f4xx_hal_conf.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
@@ -56,10 +56,10 @@ Core/Src/pwm.o: ../Core/Src/pwm.c ../Core/Inc/pwm.h ../Core/Inc/tim.h \
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
  ../USB_DEVICE/Target/usbd_conf.h ../Core/Inc/main.h \
  ../Core/Inc/global_variables.h ../Core/Inc/ssd1306.h \
- ../Core/Inc/ssd1306_conf.h ../Core/Inc/ssd1306_fonts.h ../Core/Inc/pwm.h \
- ../Core/Inc/cat24c256.h ../Core/Inc/ina226.h ../Core/Inc/lm75ad.h
+ ../Core/Inc/ssd1306_conf.h ../Core/Inc/ssd1306_fonts.h ../Core/Inc/tim.h \
+ ../Core/Inc/pwm.h ../Core/Inc/cat24c256.h ../Core/Inc/ina226.h \
+ ../Core/Inc/lm75ad.h
 ../Core/Inc/pwm.h:
-../Core/Inc/tim.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
@@ -123,6 +123,7 @@ Core/Src/pwm.o: ../Core/Src/pwm.c ../Core/Inc/pwm.h ../Core/Inc/tim.h \
 ../Core/Inc/ssd1306.h:
 ../Core/Inc/ssd1306_conf.h:
 ../Core/Inc/ssd1306_fonts.h:
+../Core/Inc/tim.h:
 ../Core/Inc/pwm.h:
 ../Core/Inc/cat24c256.h:
 ../Core/Inc/ina226.h:

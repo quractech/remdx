@@ -154,7 +154,7 @@ void configHW(SetupData_t *setupData, uint8_t update)
 void enablePWM(SetupData_t *setupData)
 {
 	set_pwm_freq(setupData->setRegister.set_pwm_freq);
-	if (setupData->setRegister.en_pwm0 == 1)
+	if (setupData->setRegister.en_pwm0)
 	{
 		run_pwm_out0(setupData->setRegister.set_pwm0_duty);
 	}
@@ -163,7 +163,7 @@ void enablePWM(SetupData_t *setupData)
 		stop_pwm_out0();
 	}
 
-	if (setupData->setRegister.en_pwm1 == 1)
+	if (setupData->setRegister.en_pwm1)
 	{
 		run_pwm_out1(setupData->setRegister.set_pwm1_duty);
 	}
