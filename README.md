@@ -144,4 +144,4 @@ plotter.plotData(1)
 ```
 
 <img src="remdx.gif">
-<img src="liveplotvoltage.png">
+<img src="remdx_liveplot.gif">
