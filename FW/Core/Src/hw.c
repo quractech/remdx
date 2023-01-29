@@ -187,7 +187,7 @@ void streamMeasurements(SetupData_t *setupData, float *temp_data, Ina226Data_t *
 //				channel1->vbus, channel1->current, channel1->power, channel2->vshunt, channel2->vbus, channel2->current,
 //				channel2->power, (channel2->power / channel1->power) * 100);
 
-		printf("#D#%0.1f,%0.1f,%0.3f,%0.6f,%0.3f,%0.6f,%0.3f,%0.6f,%0.3f,%0.6f,%0.3f,%0.3f,%0.3f, %0.3f,%d,%d\r\n",
+		printf("#D#%0.1f,%0.1f,%0.3f,%0.6f,%0.3f,%0.6f,%0.3f,%0.6f,%0.3f,%0.6f,%0.3f,%0.3f,%0.3f,%0.3f,%d,%d\r\n",
 				*temp_data, stm32Temp, stm32Vref, channel1->vshunt, channel1->vbus, channel1->current, channel1->power,
 				channel2->vshunt, channel2->vbus, channel2->current, channel2->power,
 				(channel2->power / channel1->power), ina_in0, ina_in1, digRead(DIG_IN0), digRead(DIG_IN1));

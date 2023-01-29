@@ -118,11 +118,15 @@ int main(void)
 	ssd1306_UpdateScreen();
 	HAL_Delay(2000);
 
+//	ina226_channelInit(&hi2c1, CH1_ADDRESS,
+//	RESET_INACTIVE | UNUSED_BITS | AVG_1 | VBUS_1100uS | VSH_1100uS | MODE_CONT_SHUNT_AND_BUS);
 	ina226_channelInit(&hi2c1, CH1_ADDRESS,
-	RESET_INACTIVE | UNUSED_BITS | AVG_1 | VBUS_1100uS | VSH_1100uS | MODE_CONT_SHUNT_AND_BUS);
+	RESET_INACTIVE | UNUSED_BITS | AVG_4 | VBUS_140uS | VSH_140uS | MODE_CONT_SHUNT_AND_BUS);
 	HAL_Delay(1);
+//	ina226_channelInit(&hi2c1, CH2_ADDRESS,
+//	RESET_INACTIVE | UNUSED_BITS | AVG_1 | VBUS_1100uS | VSH_1100uS | MODE_CONT_SHUNT_AND_BUS);
 	ina226_channelInit(&hi2c1, CH2_ADDRESS,
-	RESET_INACTIVE | UNUSED_BITS | AVG_1 | VBUS_1100uS | VSH_1100uS | MODE_CONT_SHUNT_AND_BUS);
+	RESET_INACTIVE | UNUSED_BITS | AVG_4 | VBUS_140uS | VSH_140uS | MODE_CONT_SHUNT_AND_BUS);
 	if (HAL_OK != HAL_ADC_Start_DMA(&hadc1, adc_data, 4))
 	{
 		Error_Handler();
@@ -159,7 +163,7 @@ int main(void)
 		}
 	}
 //	defaultSettings(&defaultSetupData);
-//	newSetupData = defaultSetupData;
+	newSetupData = defaultSetupData;
 	g_HWUpdateFlag = 1;
 
 	/* USER CODE END 2 */

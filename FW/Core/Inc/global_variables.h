@@ -16,8 +16,8 @@
 #define USBUpdateTime		100		// Used for the delay time in startUARTTask() function
 #define OLEDUpdateTime		500		// Used for the delay time in startOLEDUpadeTask() function
 #define UpdateTime			100 	// Used for the delay time in startUpadeTask() function
-#define LED1UpdateTime		1000	// Used for the delay time in startLED1Task() function
-#define LED2UpdateTime		1000	// Used for the delay time in startLED2Task() function
+#define LED1UpdateTime		500	// Used for the delay time in startLED1Task() function
+#define LED2UpdateTime		500	// Used for the delay time in startLED2Task() function
 #define PWMFreqCorrectionFactor	1.012
 
 // CONSTANTS - MCU internal temperature calculation
