@@ -163,7 +163,7 @@ int main(void)
 		}
 	}
 //	defaultSettings(&defaultSetupData);
-	newSetupData = defaultSetupData;
+//	newSetupData = defaultSetupData;
 	g_HWUpdateFlag = 1;
 
 	/* USER CODE END 2 */
