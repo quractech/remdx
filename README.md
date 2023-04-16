@@ -90,13 +90,15 @@ Use the letter **"w"** as the initial character of the command you are sending t
 Connect REMDx to your PC and open RealTerm.<br>
 To stop stream data from REMDx, set the **_meas_mode_** bit to 0, see [register map](https://quractech.github.io/remdx_registermap/)<br>
 
+Stop stream data.
+
 ```bash
-[Stop stream data]
 w0304
 ```
 
+Writing 0x07 to register 2.
+
 ```bash
-[Writing 0x07 to register 2]
 w0207
 ```
 
@@ -111,9 +113,9 @@ as a result of this command the onboard LEDs should turn on
 
 Use the letter **"r"** as the initial character of the command you are sending to the device if you want to **read** from a specific register.
 <br>
+Reading the content of register 2.
 
 ```bash
-[Reading the content of register 2]
 r0200
 ```
 
@@ -125,7 +127,8 @@ Outcome of RealTerm<br>
 
 ### **Python scripting**
 
-Live data visualization and REMDx reconfiguration are also possible with Python scripting. <br>
+Python scripting also allows for the reconfiguration of REMDx and live data visualization.
+<br>
 Here is some sample code to turn on led1 and led2.
 
 ```python
