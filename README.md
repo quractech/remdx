@@ -43,7 +43,7 @@ Data stream capability using USB for datalogging and visualization with python (
 2. Connect REMDx to you PC with a USB cable that is capable of data transfer.
 3. On REMDx press and hold the BOOT button, then press RESET button and let go of both buttons. This will put REMDx in programming mode.
 4. Open STM32CubeProgrammer select **USB** (Blue dropdown menu on the right column), then click **refresh** icon until "USB1" shows up on port (Serial number 2081325A4146), then click **connect**.<br> <img src="./connectstm32cubeprogrammer.png" width="75%">
-5. Download [FW.elf](https://github.com/quractech/remdx/blob/main/FW/Debug/FW.elf) file to your PC. Go back to STM32CubeProgrammer press "open file" then press download. Now REMDx should be programmed or updated to the newest firmware.
+5. Download [FW.elf](https://github.com/quractech/remdx/blob/main/FW/FW.elf) file to your PC. Go back to STM32CubeProgrammer press "open file" then press download. Now REMDx should be programmed or updated to the newest firmware.
 
 ### **Get REMDx to Communicate**
 
