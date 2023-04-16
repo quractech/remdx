@@ -1,7 +1,0 @@
-../Core/Src/led.c:10:6:led1On	8	static
-../Core/Src/led.c:15:6:led2On	8	static
-../Core/Src/led.c:20:6:led1Off	8	static
-../Core/Src/led.c:25:6:led2Off	8	static
-../Core/Src/led.c:30:6:led1Blink	16	static
-../Core/Src/led.c:36:6:led2Blink	16	static
-../Core/Src/led.c:42:6:ledBlinkAll	16	static

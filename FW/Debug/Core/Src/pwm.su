@@ -1,9 +1,0 @@
-../Core/Src/pwm.c:15:6:PWMInit	16	static
-../Core/Src/pwm.c:29:6:runPWM	16	static
-../Core/Src/pwm.c:35:6:run_pwm_out0	16	static
-../Core/Src/pwm.c:41:6:stop_pwm_out0	8	static
-../Core/Src/pwm.c:48:6:run_pwm_out1	16	static
-../Core/Src/pwm.c:54:6:stop_pwm_out1	8	static
-../Core/Src/pwm.c:61:6:set_pwm_freq	16	static
-../Core/Src/pwm.c:66:6:sweep_pwm_freq	32	static
-../Core/Src/pwm.c:85:6:sweep_pwm_duty	40	static
