@@ -29,6 +29,16 @@ The REMDx is capable of measuring:
 ### SD-card
 
 Micro-SDcard slot for saving stream data (stream data is serial data from USB).
+The current firmware does not have this functionality, however it will be added soon.
+
+### OLED Display
+
+The OLED display (ss1306) displays the bus voltages, currents, burden voltages, and powers for both channels. On the first row of the OLED display, the ambient temperature and efficiency are also shown.
+The OLED display data layout is shown in the figure below.
+
+<p align="center">
+<img src="oled_disp_data_layout_black.png" width="40%">
+</p>
 
 ### Real-time plotting with python
 
