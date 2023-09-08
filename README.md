@@ -31,7 +31,7 @@ The current firmware does not have this functionality, however, it will be added
 
 ### OLED Display
 
-The OLED display (ss1306) displays the bus voltages (Vbusx), currents (Isensx), burden voltages (Vburdx), and powers (Powerx) for both channels. On the first row of the OLED display, the ambient temperature and efficiency are also shown.
+The OLED display (ssd1306) displays the bus voltages (Vbusx), currents (Isensx), burden voltages (Vburdx), and powers (Powerx) for both channels. On the first row of the OLED display, the ambient temperature and efficiency are also shown.
 The OLED display data layout is shown in the figure below.
 
 <p align="center">
